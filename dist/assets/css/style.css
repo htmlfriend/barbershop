@@ -26,7 +26,7 @@ body {
     color: #ffffff;
     text-transform: uppercase;
     background-color: #000000;
-    background-image: url("img/bg.jpg");
+    background-image: url("../images/main/body_bg.jpg");
     background-position: top center;
     background-repeat: no-repeat;
 }
@@ -64,13 +64,47 @@ input[type="radio"].visually-hidden {
     background-repeat: repeat;
 }
 
-.main-header {
-    margin-bottom: 75px;
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
-.inner-page .main-header {
-    margin-bottom: 50px;
-    background-color: #000000;
+.index-columns {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 50px 80px;
+    margin-bottom: 35px;
+    color: #000000;
+    background-color: #f8f5f2;
+    background-image: url("img/line.png"), url("img/pattern-light.jpg");
+    background-position: center, 0 0;
+    background-repeat: no-repeat, repeat;
+}
+
+.index-columns h2 {
+    margin: 0;
+    margin-bottom: 25px;
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.page-title {
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.inner-page .main-footer {
+    margin-top: 45px;
+}
+
+.modal {
+    display: none;
 }
 
 .button {
@@ -96,6 +130,15 @@ input[type="radio"].visually-hidden {
 .button:disabled {
     cursor: default;
     opacity: 0.5;
+    background-color: #000000;
+}
+
+.main-header {
+    margin-bottom: 75px;
+}
+
+.inner-page .main-header {
+    margin-bottom: 50px;
     background-color: #000000;
 }
 
@@ -177,7 +220,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation a,
 .user-navigation a {
-    display: block;
+    display: inline-block;
     padding: 25px 20px;
     vertical-align: middle;
     color: #ffffff;
@@ -212,12 +255,6 @@ input[type="radio"].visually-hidden {
 .login-link:focus::before,
 .login-link:active::before {
     opacity: 1;
-}
-
-.container {
-    width: 940px;
-    margin: 0 auto;
-    padding: 0 10px;
 }
 
 .features {
@@ -264,27 +301,6 @@ input[type="radio"].visually-hidden {
     margin: 0 10px;
 }
 
-.index-columns {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    padding: 50px 80px;
-    margin-bottom: 35px;
-    color: #000000;
-    background-color: #f8f5f2;
-    background-image: url("img/line.png"), url("img/pattern-light.jpg");
-    background-position: center, 0 0;
-    background-repeat: no-repeat, repeat;
-}
-
-.index-columns h2 {
-    margin: 0;
-    margin-bottom: 25px;
-    font-size: 30px;
-    line-height: 42px;
-}
-
 .news {
     width: 380px;
 }
@@ -306,43 +322,6 @@ input[type="radio"].visually-hidden {
 
 .news-item time {
     text-transform: none;
-}
-
-.gallery {
-    width: 300px;
-}
-
-.gallery-container {
-    position: relative;
-    height: 260px;
-}
-
-.gallery-content {
-    height: 164px;
-    margin: 0;
-    background-color: #cccccc;
-    border: 7px solid #ffffff;
-}
-
-.gallery-content img {
-    width: 286px;
-    height: 164px;
-}
-
-.gallery-button {
-    box-sizing: border-box;
-    position: absolute;
-    bottom: 0;
-    width: 140px;
-    margin: 0;
-}
-
-.gallery-button-back {
-    left: 0;
-}
-
-.gallery-button-next {
-    right: 0;
 }
 
 .contacts {
@@ -406,14 +385,6 @@ input[type="radio"].visually-hidden {
     margin-right: 0;
 }
 
-.page-title {
-    margin: 0;
-    margin-bottom: 15px;
-    padding: 0;
-    font-size: 30px;
-    line-height: 42px;
-}
-
 .breadcrumbs {
     display: -webkit-box;
     display: flex;
@@ -462,13 +433,6 @@ input[type="radio"].visually-hidden {
 
 .breadcrumbs-current::after {
     display: none;
-}
-
-.catalog-columns {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
 }
 
 .filters {
@@ -566,91 +530,6 @@ input[type="radio"].visually-hidden {
     height: 8px;
     background-color: #000000;
     border-radius: 50%;
-}
-
-.catalog {
-    width: 700px;
-}
-
-.catalog-list {
-    display: -webkit-box;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 25px;
-    list-style: none;
-}
-
-.catalog-item {
-    width: 220px;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    background-color: #f8f8f8;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.catalog-item:nth-child(3n) {
-    margin-right: 0;
-}
-
-.catalog-item:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.catalog-item a {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    color: #000000;
-}
-
-.catalog-item h3 {
-    -webkit-box-ordinal-group: 2;
-    order: 1;
-    margin-top: 17px;
-    margin-bottom: 12px;
-    margin-left: 16px;
-    margin-right: 15px;
-    font-size: 14px;
-    line-height: 18px;
-}
-
-.catalog-category {
-    display: block;
-    text-transform: none;
-}
-
-.catalog-item-image {
-    width: 220px;
-    height: 165px;
-    margin: 0;
-}
-
-.catalog-item-price {
-    display: -webkit-box;
-    display: flex;
-    margin: 15px;
-    margin-top: 0;
-}
-
-.catalog-item-price b {
-    width: 112px;
-    padding: 13px 25px 11px;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-    background-color: #e5e5e5;
-}
-
-.catalog-item-price .button {
-    width: 50px;
-    padding: 13px 18px 11px;
-    margin-right: 0;
-    line-height: 20px;
-    color: #ffffff;
 }
 
 .pagination-list {
@@ -810,18 +689,41 @@ input[type="radio"].visually-hidden {
     transform: rotate(45deg);
 }
 
-.main-footer {
-    margin-top: 65px;
-    padding: 60px 0;
-    color: #ffffff;
-    background-color: #212121;
-    background-image: url("img/pattern-dark.jpg");
-    background-position: 0 0;
-    background-repeat: repeat;
+.gallery {
+    width: 300px;
 }
 
-.inner-page .main-footer {
-    margin-top: 45px;
+.gallery-container {
+    position: relative;
+    height: 260px;
+}
+
+.gallery-content {
+    height: 164px;
+    margin: 0;
+    background-color: #cccccc;
+    border: 7px solid #ffffff;
+}
+
+.gallery-content img {
+    width: 286px;
+    height: 164px;
+}
+
+.gallery-button {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    width: 140px;
+    margin: 0;
+}
+
+.gallery-button-back {
+    left: 0;
+}
+
+.gallery-button-next {
+    right: 0;
 }
 
 .main-footer .container {
@@ -910,4 +812,106 @@ input[type="radio"].visually-hidden {
 .footer-copyright .button:focus {
     color: #000000;
     background-color: #ffffff;
+}
+
+.catalog-columns {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.catalog {
+    width: 700px;
+}
+
+.catalog-list {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+    list-style: none;
+}
+
+.catalog-item {
+    width: 220px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    background-color: #f8f8f8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.catalog-item:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.catalog-item a {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    color: #000000;
+}
+
+.catalog-item h3 {
+    -webkit-box-ordinal-group: 2;
+    order: 1;
+    margin-top: 17px;
+    margin-bottom: 12px;
+    margin-left: 16px;
+    margin-right: 15px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.catalog-category {
+    display: block;
+    text-transform: none;
+}
+
+.catalog-item-image {
+    width: 220px;
+    height: 165px;
+    margin: 0;
+}
+
+.catalog-item-price {
+    display: -webkit-box;
+    display: flex;
+    margin: 15px;
+    margin-top: 0;
+}
+
+.catalog-item-price b {
+    width: 112px;
+    padding: 13px 25px 11px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #e5e5e5;
+}
+
+.catalog-item-price .button {
+    width: 50px;
+    padding: 13px 18px 11px;
+    margin-right: 0;
+    line-height: 20px;
+    color: #ffffff;
+}
+
+.main-footer {
+    margin-top: 65px;
+    padding: 60px 0;
+    color: #ffffff;
+    background-color: #212121;
+    background-image: url("img/pattern-dark.jpg");
+    background-position: 0 0;
+    background-repeat: repeat;
 }
